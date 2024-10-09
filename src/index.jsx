@@ -69,11 +69,11 @@ export const Index = () => {
       <section className="py-1 bg-white sm:py-1 lg:py-6 relative">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-md mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Our Featured Car Toys</h2>
+            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Our Featured  Toy Cars</h2>
             <div>
               <form>
                 <label htmlFor="product-category" className="block mb-2 text-sm font-medium text-gray-900">
-                  Select Product Category:
+                  Select ToyCar Category:
                 </label>
                 <select
                   id="product-category"
