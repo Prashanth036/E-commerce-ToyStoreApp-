@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemoryRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 // import ProductListing from './pages/ProductListing';
 // import ProductCart from './pages/ProductCart';
 // import MockPaymentPage from './pages/MockPaymentPage';
