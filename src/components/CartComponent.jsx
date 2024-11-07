@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { cancelCart, decrement, increment, removeProduct } from "../reduxStore/reducers/productReducer";
+import { useNavigate } from "react-router-dom";
 
 
 let styles = {
@@ -17,6 +18,7 @@ export const CartComponent = (setOpenModal, openModal) => {
         totalItems: 0
     });
     const [products, setProducts] = useState([])
+    let navigate=useNavigate()
     const product = useSelector((state) => state.products);
     const dispatch=useDispatch()
     useEffect(() => {
@@ -95,7 +97,7 @@ export const CartComponent = (setOpenModal, openModal) => {
                     <button className={styles.close}
                     onClick={()=>(dispatch(cancelCart()),setOpenModal(!openModal))}
                     >Cancel</button>
-                    <button className="bg-green-600 p-1 text-white rounded-md mx-1">Buy</button>
+                    <button onClick={()=>navigate("/checkout")} className="bg-green-600 p-1 text-white rounded-md mx-1">Checkout</button>
                 </div>
             </div>
         </>
