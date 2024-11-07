@@ -19,7 +19,7 @@ export const Index = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const res = await axios.get("http://localhost:8080/products");
+        const res = await axios.get("https://storeapi-ag7q.onrender.com/products");
         setProducts(res.data);
         setData(res.data);
         updatePagination(res.data);

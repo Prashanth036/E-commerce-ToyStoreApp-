@@ -12,7 +12,7 @@ const MockPaymentPage = () => {
   useEffect(() => {
     const fetchPaymentStatus = async () => {
       try {
-        const response = await fetch("http://localhost:8080/mock_payment");
+        const response = await fetch("https://storeapi-ag7q.onrender.com/mock_payment");
         const data = await response.json();
         setPaymentStatus(data);
         dispatch(cancelCart());
